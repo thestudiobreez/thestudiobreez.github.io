@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <head>
+  {% include head.html %}
+  </head>
+  <body>
+
+    {% include Navigation.html %}
+    {% include imageheader.html %}
+    <div class="container">
+    {% include first_featurette.html %}
+    {% include latest_features.html %}
+    {% include second_featurette.html %}
+    {% include footer.html %}
+    </div>
+    {% include end.html %}
+  </body>
+
+</html>
