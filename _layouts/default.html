@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html class="full" lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html  lang="{{ page.lang | default: site.lang | default: "en" }}">
   <head>
   {% include head.html %}
   </head>
-  <body>
+  <body class="full">
 
     {% include Navigation.html %}
-
+    {% include landingpage.html %}
     {% include end.html %}
   </body>
 

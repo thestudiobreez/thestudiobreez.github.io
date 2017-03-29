@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <head>
+  {% include head.html %}
+  </head>
+  <body>
+
+    {% include Navigation.html %}
+    <div class="container">
+      {% include contactheading.html %}
+      {% include contactform.html %}
+      {% include footer.html %}
+    </div>
+    {% include end.html %}
+  </body>
+
+</html>

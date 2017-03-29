@@ -5,6 +5,7 @@
  */
 
 body {
+    font-family: 'Poppins', sans-serif;
     margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
@@ -12,7 +13,7 @@ body {
     display: block;
     width: 100%;
     text-align: center;
-    background: url('http://placehold.it/1900x500') no-repeat center center scroll;
+    background: url("/images/jumbotron1.jpg") no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -28,15 +29,15 @@ body {
 }
 
 .headline h1 {
-    font-size: 130px;
-    background: #fff;
-    background: rgba(255,255,255,0.9);
+    font-size: 100px;
+    color: white;
+    background: rgba(68,35,77,0.5);
 }
 
 .headline h2 {
-    font-size: 77px;
-    background: #fff;
-    background: rgba(255,255,255,0.9);
+    font-size: 50px;
+    color: white;
+    background: rgba(68,35,77,0.5);
 }
 
 .featurette-divider {
@@ -49,10 +50,14 @@ body {
 
 .featurette-image.pull-left {
     margin-right: 40px;
+    width: 45%;
+    height: 75%;
 }
 
 .featurette-image.pull-right {
     margin-left: 40px;
+    width: 45%;
+    height: 75%;
 }
 
 .featurette-heading {
@@ -61,6 +66,7 @@ body {
 
 footer {
     margin: 50px 0;
+    color: #84234d;
 }
 
 @media(max-width:1200px) {
@@ -179,4 +185,69 @@ footer {
         margin-bottom: 10px;
         margin-left: 0;
     }
+}
+
+.navbar-inverse .navbar-brand{
+  color: white;
+}
+
+.navbar-inverse {
+  background-color: #84234d;
+  border-color: #84234d;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+  color: white;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover{
+  text-decoration: underline;
+}
+
+.landingpage{
+  text-align: left;
+  margin-top: 18%;
+}
+
+.opmaak {
+  border: none;
+  background-color: rgba(68,35,77,0.5);
+  color: white;
+  width: 35%;
+  padding: 20px;
+  margin-left: 30%;
+  text-align: center;
+  float: left;
+}
+
+.opmaak h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+}
+
+.opmaak p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+
+.ghost-button {
+  display: inline-block;
+  width: 100px;
+  padding: 5px;
+  margin: 10px;
+  background-color: rgb(132,35,77);
+  color: white;
+  border: 1px solid rgb(132,35,77);
+  border-radius: 5%;
+  padding: 7px;
+
+}
+
+.ghost-button:hover,
+.ghost-button:active {
+  background-color: rgb(100,35,77);
+  color: white;
+  text-decoration: none;
 }
