@@ -5,19 +5,37 @@
  */
 
 body {
-    font-family: 'Poppins', sans-serif;
-    margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    color: #2d2d2d;
+    background-color: rgb(226, 226, 226,);
+    padding-top: 100px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
-.header-image {
+
+.jumbotron{
     display: block;
-    width: 100%;
+    width: 100% ;
+    height: 550px;
     text-align: center;
-    background: url("/images/jumbotron1.jpg") no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    text-shadow: 1px 1px black;
+    color: white;
+    background: url("/images/homepage-original-size.jpg") no-repeat center center scroll;
+    background-size: 100% 100%;
+}
+
+.jumbotron h1{
+  font-weight: bold;
+  color: #d1b48a;
+  text-transform: uppercase;
+  text-shadow: 2px 5px #7a6854;
+  margin-top: 175px;
+}
+}
+
+.jumbotron h3{
+font-weight: bold;
+margin-top: 100px;
 }
 
 .img-center {
@@ -26,18 +44,21 @@ body {
 
 .headline {
     padding: 120px 0;
+
 }
 
 .headline h1 {
     font-size: 100px;
+    font-weight: bolder;
     color: white;
-    background: rgba(68,35,77,0.5);
+    background: rgba(53, 49, 49, 0.9);
 }
 
 .headline h2 {
     font-size: 50px;
+    font-weight: bold;
     color: white;
-    background: rgba(68,35,77,0.5);
+    background: rgba(53, 49, 49, 0.9);
 }
 
 .featurette-divider {
@@ -66,7 +87,8 @@ body {
 
 footer {
     margin: 50px 0;
-    color: #84234d;
+    color: rgb(53, 49, 49,);
+    font-weight: bold;
 }
 
 @media(max-width:1200px) {
@@ -192,54 +214,74 @@ footer {
 }
 
 .navbar-inverse {
-  background-color: #84234d;
-  border-color: #84234d;
+  background-color: white;
+  border: none;
+  padding: 20px;
+
 }
 
 .navbar-inverse .navbar-nav>li>a{
+  color: black;
+  border: 1px solid;
+  border-radius: 6%;
+  margin-right: 10px;
+  box-shadow: 7px 7px 12px #888888;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
   color: white;
+  background-color: black;
+  border-color: black
+
 }
 
-.nav>li>a:focus,
-.nav>li>a:hover{
-  text-decoration: underline;
+.navbar-inverse .navbar-nav>li>a:focus {
+    color: white;
+    background-color: black;
+    border-color: black;
 }
 
-.landingpage{
-  text-align: left;
-  margin-top: 18%;
+.navbar-inverse .navbar-nav>.active>a {
+    color: #fff;
+    background-color: #080808;
+    border-color: black;
 }
 
-.opmaak {
-  border: none;
-  background-color: rgba(68,35,77,0.5);
-  color: white;
-  width: 35%;
-  padding: 20px;
-  margin-left: 30%;
-  text-align: center;
-  float: left;
+.navbar-inverse .navbar-brand {
+    color: black;
+}
+
+.navbar-inverse .navbar-brand:hover {
+    color: black;
 }
 
 .opmaak h1{
-  font-family: 'Poppins', sans-serif;
-  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 80px;
+  color: white;
+  font-weight: bolder;
 }
 
 .opmaak p{
-  font-family: 'Poppins', sans-serif;
-  font-size: 18px;
+font-family: 'Montserrat', sans-serif;
+font-size: 40px;
+color: white;
+font-weight: bold;
 }
 
 
 .ghost-button {
   display: inline-block;
   width: 100px;
-  padding: 5px;
-  margin: 10px;
-  background-color: rgb(132,35,77);
+  padding: 10px;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-right: 60px;
+  margin-left: 60px;
+  margin-top: 10%;
+  background-color: #382f2f;
   color: white;
-  border: 1px solid rgb(132,35,77);
+  border: 1px solid #382f2f;
   border-radius: 5%;
   padding: 7px;
 
@@ -247,11 +289,89 @@ footer {
 
 .ghost-button:hover,
 .ghost-button:active {
-  background-color: rgb(100,35,77);
+  background-color: #594b4b;
   color: white;
   text-decoration: none;
 }
 
-#contact{
-  margin-top: 100px;
+
+
+.foto-a{
+  width: 250px;
+  height: 250px;
+}
+
+.foto-b{
+  width: 500px;
+  height: 800px;
+}
+
+.shadow{
+  text-shadow: 1px 1px 2px black;
+}
+
+.ghost-button2 {
+  display: inline-block;
+  width: 100px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-top: 10%;
+  background-color: #382f2f;
+  color: white;
+  border: 1px solid #382f2f;
+  border-radius: 5%;
+  padding: 7px;
+
+}
+
+.ghost-button2:hover,
+.ghost-button2:active {
+  background-color: #594b4b;
+  color: white;
+  text-decoration: none;
+}
+
+.ruimte{
+  margin-top: 60px;
+}
+
+.fa .fa-facebook-official{
+  font-size: 50px;
+}
+
+.thumbnail {
+    display: block;
+    padding: 50px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: none;
+  }
+
+  .featurette {
+    margin-top: 40px;
+    margin-bottom: -20px;
+}
+
+.edit {
+   font-size: 50px;
+   margin-left: 14px;
+   margin-bottom: -10px;
+}
+
+.btn-success {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    color: black;
+    background-color: white;
+    border-color: #0a0a0a;
+  }
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #0c0c0c;
+    border-color: #0a0a0a;
 }
