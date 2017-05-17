@@ -352,9 +352,9 @@ font-weight: bold;
   }
 
   .featurette {
-    margin-top: 40px;
-    margin-bottom: -20px;
-}
+      margin-top: 150px;
+      margin-bottom: -20px;
+  }
 
 .edit {
    font-size: 50px;
